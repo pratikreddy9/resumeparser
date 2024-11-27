@@ -1,0 +1,99 @@
+Errors in 478  
+
+1)
+
+01a962a5-bb3f-4d6f-9255-a0a58991074b
+  this resume id had 
+
+    "jobExperiences": [
+            {
+                "duration": "0",
+                "title": "Full Stack Developer"
+            },
+            {
+                "duration": "1",
+                "title": "Back-End Engineer"  // this cannot be "-"
+            },
+            {
+                "duration": "0",
+                "title": "Junior Programmer Intern"
+            }
+        ]
+
+
+2)
+
+02111a4e-eefe-4b40-a3af-7ed5f7fddd0a
+presence of charecters like  "-" and "/"
+        "keywords": [
+            "IOS Developer",
+            "Fast learner",
+            "Honest",
+            "Responsible",
+            "Hard-working",
+            "Architected and developed native iOS applications",
+            "CI/CD pipelines",
+            "App Store submissions",
+            "Integrated push notification systems",
+            "Analytics tracking"
+        ]
+
+
+
+
+3)
+
+how will we diffrenciate beteen these keys later?
+
+
+        "resumeId": "0220f857-aed6-43c1-8ea0-08670ce6d52f",
+        "name": "Dikshatek Dikshatek",
+        "email": null,
+        "contactNo": null,
+        "address": "Indonesia",
+
+anddd
+
+        "resumeId": "02111a4e-eefe-4b40-a3af-7ed5f7fddd0a",
+        "name": "Dikshatek",
+        "email": "",
+        "contactNo": "",
+        "address": "Jakarta, Indonesia",
+
+
+4)
+        \\ really need to do something about addresses
+        "resumeId": "1081c1c7-344e-4c71-9d66-98ad70835619",
+        "name": "Charlyn S. Jorvina",
+        "email": "charlyn.stateresa@gmail.com",
+        "contactNo": "2548398/09456591889",
+        "address": "2276 Pasig Line Str. Sta. Ana, Manila City",
+
+5)
+        \\  we need to decide what to add under keywords.
+ \\ after checking how many uiques we have this was presented
+          Original Keywords          4833
+1                 Lowercase          4089
+2       Remove Extra Spaces          4089
+3         Alphanumeric Only          4041
+
+
+
+        here are some llm produced suggestions :
+
+Redundancy:
+
+Keywords like "Java" and "JavaScript" are distinct, but variations like "Javascript" and "JavaScript" introduce unnecessary duplication.
+Similar cases include "node.js" vs. "nodejs" or "HTML/CSS" vs. "html css".
+Noise in Keywords:
+
+Traits like "hard-working," "honest," and "responsible" are present but aren't actionable for matching.
+These can be deprioritized or removed.
+Irrelevant Additions:
+
+Generic terms like "teamwork" or "problem-solving" dilute the focus on technical or domain-specific skills.
+Semantic Standardization:
+
+Grouping related keywords (e.g., "Python 3", "python 2", and "python") under a broader category might improve relevance.
+
+
