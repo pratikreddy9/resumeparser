@@ -79,21 +79,29 @@ anddd
 
 
 
-        here are some llm produced suggestions :
+        \\\\\\ here are some llm produced suggestions :
 
 Redundancy:
-
 Keywords like "Java" and "JavaScript" are distinct, but variations like "Javascript" and "JavaScript" introduce unnecessary duplication.
 Similar cases include "node.js" vs. "nodejs" or "HTML/CSS" vs. "html css".
-Noise in Keywords:
 
+Noise in Keywords:
 Traits like "hard-working," "honest," and "responsible" are present but aren't actionable for matching.
 These can be deprioritized or removed.
+
 Irrelevant Additions:
-
 Generic terms like "teamwork" or "problem-solving" dilute the focus on technical or domain-specific skills.
-Semantic Standardization:
 
+Semantic Standardization:
 Grouping related keywords (e.g., "Python 3", "python 2", and "python") under a broader category might improve relevance.
+
+
+6)           // the versions of the tech under 
+     "resumeId": "0257fd0b-a437-4cd8-a380-3d6a3c57866a",
+
+{
+                "skillId": null,
+                "skillName": "aws(s3)"
+            },
 
 
